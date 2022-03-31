@@ -1,0 +1,28 @@
+{
+  "id": "cloud.iot-gateway.spotpris",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Spotpris Norge"
+  },
+  "description": {
+    "en": "Få spotpriser strøm inn i Homey."
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Pål Andreassen",
+    "email": "paal.andreassen@gmail.com"
+  }
+}
