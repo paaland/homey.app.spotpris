@@ -1,16 +1,18 @@
 'use strict';
 
 const Homey = require('homey');
+const SpotprisClient = require('./spotpris/client.js')
 
-class MyApp extends Homey.App {
+class Spotpris extends Homey.App {
 
   /**
    * onInit is called when the app is initialized.
    */
   async onInit() {
-    this.log('MyApp has been initialized');
+    this.client = new SpotprisClient();
+    this.log('Spotpris has been initialized');
   }
 
 }
 
-module.exports = MyApp;
+module.exports = Spotpris;

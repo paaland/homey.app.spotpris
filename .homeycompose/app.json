@@ -10,7 +10,7 @@
     "en": "Spotpris Norge"
   },
   "description": {
-    "en": "Få spotpriser strøm inn i Homey."
+    "en": "Få spotpriser inn i Homey. Styr enheter basert på strømprisen."
   },
   "category": [
     "energy"

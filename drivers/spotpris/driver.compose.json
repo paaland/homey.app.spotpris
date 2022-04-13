@@ -1,0 +1,39 @@
+{
+  "name": {
+    "en": "Spotpris"
+  },
+  "class": "other",
+  "capabilities": ["powerprice.current", "powerprice.average", "powerprice_percentage"],
+  "capabilitiesOptions": {
+    "powerprice.current": { 
+      "title": { 
+        "no": "Pris denne timen",
+        "en": "Price this hour" 
+      }, 
+      "decimals": 0 
+    },
+
+    "powerprice.average": {
+      "title": { 
+        "no": "Døgnsnitt",
+        "en": "Daily average" 
+      }, 
+      "decimals": 0 
+    },
+
+    "powerprice_percentage": { 
+      "title": { 
+        "no": "Prosent av døgnsnitt",
+        "en": "Percentage of daily average" 
+      }, 
+      "decimals": 0 
+    }
+  },
+  "platforms": ["local"],
+  "connectivity": ["cloud"],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  }
+}

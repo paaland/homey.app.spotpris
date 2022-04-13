@@ -1,3 +1,113 @@
 {
-  "_comment": "This file is generated. Please edit .homeycompose/app.json instead."
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "cloud.iot-gateway.spotpris",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Spotpris Norge"
+  },
+  "description": {
+    "en": "Få spotpriser inn i Homey. Styr enheter basert på strømprisen."
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Pål Andreassen",
+    "email": "paal.andreassen@gmail.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Spotpris"
+      },
+      "class": "other",
+      "capabilities": [
+        "powerprice.current",
+        "powerprice.average",
+        "powerprice_percentage"
+      ],
+      "capabilitiesOptions": {
+        "powerprice.current": {
+          "title": {
+            "no": "Pris denne timen",
+            "en": "Price this hour"
+          },
+          "decimals": 0
+        },
+        "powerprice.average": {
+          "title": {
+            "no": "Døgnsnitt",
+            "en": "Daily average"
+          },
+          "decimals": 0
+        },
+        "powerprice_percentage": {
+          "title": {
+            "no": "Prosent av døgnsnitt",
+            "en": "Percentage of daily average"
+          },
+          "decimals": 0
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/spotpris/assets/images/small.png",
+        "large": "/drivers/spotpris/assets/images/large.png",
+        "xlarge": "/drivers/spotpris/assets/images/xlarge.png"
+      },
+      "id": "spotpris"
+    }
+  ],
+  "capabilities": {
+    "powerprice": {
+      "type": "number",
+      "title": {
+        "en": "Power price",
+        "no": "Strømpris"
+      },
+      "uiComponent": "slider",
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "øre/kWh",
+        "no": "øre/kWh"
+      },
+      "min": 0,
+      "max": 3000,
+      "step": 1
+    },
+    "powerprice_percentage": {
+      "type": "number",
+      "title": {
+        "en": "Percentage of daily average",
+        "no": "Prosentandel av døgnsnitt"
+      },
+      "uiComponent": "slider",
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "%",
+        "no": "%"
+      },
+      "min": 0,
+      "max": 3000,
+      "step": 1
+    }
+  }
 }
